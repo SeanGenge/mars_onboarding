@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewBag.Title - My ASP.NET Application</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/modernizr")
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/bootstrap")
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
+	@*<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>*@
+</head>
+<body>
+	<div class="ui inverted segment">
+		<div class="ui inverted secondary menu">
+			<a href="/Customers/Index" class="item">Mars On-boarding</a>
+			<a href="/Customers/Index" class="item">Customers</a>
+			<a href="/Products/Index" class="item">Products</a>
+			<a href="/Stores/Index" class="item">Stores</a>
+			<a href="/ProductSolds/Index" class="item">Sales</a>
+		</div>
+	</div>
+
+	<div class="container body-content">
+		@RenderBody()
+		<hr />
+		<footer>
+			<p>&copy; @DateTime.Now.Year - Mars On-boarding</p>
+		</footer>
+	</div>
+
+	@RenderSection("scripts", required: false)
+</body>
+</html>

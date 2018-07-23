@@ -1,0 +1,20 @@
+﻿table {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-collapse: collapse;
+	width: 80%;
+	border: 2px solid #ddd;
+}
+
+th, td {
+	text-align: left;
+	padding: 5px 25px;
+}
+
+tr:nth-child(even) {
+	background-color: #dfdfdf;
+}
+
+tr:hover {
+	background-color:#cccccc;
+}
